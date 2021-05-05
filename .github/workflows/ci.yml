@@ -1,11 +1,6 @@
 name: Build + Deploy
 
-on:
-  push:
-    branches: [main]
-    tags: ["*.*.*"]
-  pull_request:
-    branches: [main]
+on: [push, pull_request]
 
 env:
   PROJECT_NAME: "compreffor"
